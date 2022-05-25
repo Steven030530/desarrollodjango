@@ -1,0 +1,15 @@
+
+<div style="text-align: center;">
+<br>
+<br>
+<h1>AGREGAR PERSONAS</h1>
+<img src="https://th.bing.com/th/id/R.c721b73fc657063e9b71333f31f50f11?rik=w3gwaRGqH%2ftlig&riu=http%3a%2f%2fwww.trinacional.simsan.org%2fimages%2fSAN_FRANCISCO_DEL_VALLE%2fSAN_FRANCISCO_DEL_VALLE%2fSAN_FRANCISCO_DEL_VALLE%2fLogos_Actores_Locales%2fLogo_UNBOUND.jpg&ehk=Ee6mb%2baRnce9AEKn9W4CiCMBCtCJ0VGZwjeEgBHsyWw%3d&risl=&pid=ImgRaw&r=0" alt="unbound">
+<form method="POST">{% csrf_token %}
+    <br>
+    {{form.as_p}}
+    <br>
+    <br>
+    <button type="submit">Agregar</button>
+</form>
+</div>
+

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block title %} INICIO REGISTRO EMPLEADOS {% endblock title %}
+
+{% block content %} 
+
+{% include 'includes/header.html' %}
+
+<!-- inicio de la imagen de portada -->
+
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+    <div class="orbit-wrapper">
+      <div class="orbit-controls">
+        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+      </div>
+      <ul class="orbit-container">
+        <li class="is-active orbit-slide">
+          <figure class="orbit-figure">
+            <img class="orbit-image" src="{% static 'img/OIP.jpg' %}" width="100px" height="100px" alt=""Space">
+            <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+          </figure>
+        </li>
+        <!-- <li class="orbit-slide">
+          <figure class="orbit-figure">
+            <img class="orbit-image" src="{% static 'img/crop.jpg' %}" width="100px" height="100px" alt="Space">
+            <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+          </figure>
+        </li> -->
+      </ul>
+    </div>   
+  </div>
+
+<!-- fin de la imagen de portada -->
+
+<!-- 
+bloque de bienvenidad -->
+
+
+<div class="grid-x align-center">
+    <h1 class="cell large-8">BIENVENIDOS AL SISTEMA DE REGISTRO DE EMPLEADOS</h1>
+    <div class="cell large-7">
+        <h5>CREA y EDITA A TUS EMPLEADOS</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, rem fugit, ipsam praesentium voluptates, numquam earum aut temporibus esse quod officia voluptatem dignissimos vel debitis dolor harum? Hic, quam maiores.
+        </p>
+    </div>
+</div>
+
+
+
+<!-- fin de bloque de bienvenidad -->
+
+{% endblock content %}

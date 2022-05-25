@@ -1,0 +1,14 @@
+
+
+<div style="text-align:center">
+<h1>PRUEBA PARA CREAR REGISTROS</h1>
+
+<h2>FORMULARIO PARA DILIGENCIAR</h2>
+
+<form method="POST">{% csrf_token %}
+    {{form.as_p}}
+    <br>
+    <br>
+    <button type="submit" >Guardar</button>
+</form>
+</div>

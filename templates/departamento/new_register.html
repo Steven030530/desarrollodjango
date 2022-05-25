@@ -1,0 +1,9 @@
+
+<h1>REGISTRO DEPARTAMENTO</h1>
+
+<form method="POST">{% csrf_token %}
+    {{form.as_p}}
+    <br>
+    <br>
+    <button type="submit">Guardar</button>
+</form>

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+{% include 'includes/header.html' %}
+
+<div text-align="center">
+    <h1>LISTA DE AREAS</h1>
+
+    <ul>
+    
+        
+            {% for element in object_list  %}
+                <p>
+                    {{element}}
+                </p>
+            {% endfor %}
+            
+    
+    </ul>
+</div>
+{% endblock content %}

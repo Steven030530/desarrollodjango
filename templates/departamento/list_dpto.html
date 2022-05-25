@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+
+
+{% block content %}
+{% include 'includes/header.html' %}
+<h1>LISTA DE DEPARTAMENTOS</h1>
+<table>
+    <tbody>
+        
+    
+    
+    {% for departamento in object_list %}           
+    <tr>
+        <td>{{departamento.name}}</td>
+        <td>{{departamento.shor_name}}</td>
+        <td>
+            <a class = "button warning" href="{% url 'persona_app:area_empleado' departamento.name %}">Ver Empleado</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
